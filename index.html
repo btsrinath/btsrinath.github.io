@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Google Search Box</title>
   <style>
     body {
@@ -48,6 +48,26 @@
   </style>
 </head>
 <body>
+  <script type='text/javascript'>
+ß	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DdL00000iJlgD',
+				'GitHub_Pages',
+				'https://sync-aforce-dev-ed.develop.my.site.com/ESWGitHubPages1767996348145',
+				{
+					scrt2URL: 'https://sync-aforce-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://sync-aforce-dev-ed.develop.my.site.com/ESWGitHubPages1767996348145/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
   <div class="search-box">
     <form action="https://www.google.com/search" method="get" target="_blank" role="search" aria-label="Google Search">
       <label for="q" class="visually-hidden">Search Google</label>
